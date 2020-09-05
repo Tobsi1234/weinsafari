@@ -15,17 +15,24 @@ class RestaurantsViewController: UITableViewController {
     let phone = "phone"
     let food = "food"
     let coordinates = "coordinates"
+    let color = "color"
+    let text = "text"
 
     let restaurants = [
-        0: ["label":"Weingut Schwarz", "street": "Outback auf der Mönchbergspitze", "phone": "0711 334727", "food": "Weinausschank & Gebackenes auf die Hand", "coordinates": "48.780916,9.260507"],
+        0: ["label":"Weingut Schwarz", "street": "Outback auf der Mönchbergspitze", "phone": "0711 334727", "food": "Weinausschank & Gebackenes auf die Hand", "coordinates": "48.780916,9.260507", "color": UIColor.systemGreen,
+            "text": "Hinter dem Namen Schwarz verbirgt sich kein Einzelkämpfer, sondern eine starke Gemeinschaft. Die Leidenschaft für den Wein wird seit Generationen weitergegeben und findet auch weiterhin seine Fortsetzung. Markus und Rita Schwarz leiten die Geschicke des Familienweinguts, unterstützt von Ludwig, Winzer und Techniker für Weinbau und Oenologie, Stefanie, Winzerin und B.Sc. Internationale Weinwirtschaft, sowie Daniel und Anna. Stets die Qualität im Fokus, arbeiten drei Generationen im Weinanbau und -ausbau, der Vermarktung und der seit 1967 betriebenen Besenwirtschaft. Unsere Weine verkörpern Bodenständigkeit, Heimat und erzählen so einen weiteren Teil der Geschichte."],
         1: ["label":"Currle Lodge", "street": "Am Zuckerhäusle", "phone": "0151 23423927",
-            "food": "Weinausschank & Flammkuchen", "coordinates": "48.782433,9.264464"],
+            "food": "Weinausschank & Flammkuchen", "coordinates": "48.782433,9.264464", "color": UIColor.systemRed,
+            "text": "Das WEINGUT CURRLE liegt am Fuße der Weinberge im malerischen Weinort Stuttgart Uhlbach. Die Grabkapelle auf dem Württemberg in Rotenberg und das Weinbaumuseum in Uhlbach bieten attraktive Ausflugsmöglichkeiten. Der Stuttgarter Weinwanderweg führt direkt bei uns am Weingut vorbei. Gekocht wird schwäbisch regional mit vielen Spezialitäten. Dazu gehören beispielsweise geschmorte Schweinebäckle, Sülze vom Tafelspitz und Maultaschen mit Kartoffelsalat - all das, was Beswenwirtschaft Gäste mögen. Des Weiteren servieren wir immer Linsen und Spätzle, Gerichte mit Sauerkraut und knusprige Bratkartoffeln. Am Nachmittag gibt es hausgebackene Kuchen und warmer Ofenschlupfer mit Kaffeespezialitäten. Traditionell gibt es Viertele vom Riesling, Trollinger und Schillerwein, sowie erlesene Flaschenweine. Alle Weine und Sekte stammen aus eigener Erzeugung von unserem Weingut Currle."],
         2: ["label":"Weinhof Zaiß", "street": "Württembergstraße 48 \n70327 Stuttgart Deutschland",
-            "phone": "0711 331422", "food": "Weinausschank & Schnitzel", "coordinates": "48.783930,9.260940"],
+            "phone": "0711 331422", "food": "Weinausschank & Schnitzel", "coordinates": "48.783930,9.260940", "color": UIColor.systemBlue,
+            "text": "Der Weinhof Zaiß liegt mitten in den Weinbergen unterhalb der Grabkapelle.\nDie Familie Zaiß baut hier ihre Weine aus und bietet in der Besenwirtschaft traditionelle schwäbische Speisen an. \n \nDer BIG FIVE Wein des Weinhof Zaiß ist der Traminer OAK. Ein Gewürztraminer aus dem 125 Liter Barriquefass"],
         3: ["label":"MAXWEIN Camp", "street": "Am Mönchberg", "phone": "0173 8806615",
-            "food": "Weinausschank & BBQ, Pulled Pork", "coordinates": "48.781127,9.258815"],
+            "food": "Weinausschank & BBQ, Pulled Pork", "coordinates": "48.781127,9.258815", "color": UIColor.systemYellow,
+            "text": "Groß geworden mit den Weinbergen meines Großvaters erkannte ich früh, dass ich diese Leidenschaft zum Beruf machen werde. Dabei hatte ich stets das Ziel vor Augen, meine eigenen Weine herzustellen. Nachdem ich meine Ausbildung zum Winzer erfolgreich abgeschlossen hatte, sammelte ich in verschiedenen Betrieben Berufserfahrung. Anschließend absolvierte ich die Weiterbildung zum \"Staatlich geprüften Techniker für Weinbau und Oenologie\". Seit 2017 bewirtschafte ich meine ersten eigenen Weinberge in Stuttgart-Obertürkheim. Mit meinen ersten Weinen möchte ich als aufstrebender Jungwinzer den traditionellen Stuttgarter Weinkessel aufmischen. Unsere Rebfläche hat sich im ersten Jahr vervierfacht und unser Weinsortiment hat sich dadurch vergrößert. Neben unserem Premium Riesling „Hand und Fuß“ bringt der neue Jahrgang 2018 Weine wie Müller-Thurgau und Lemberger mit sich. Auch neu in unserem Keller ist ein Muskattrollinger- Rosé und ein Weißwein gekeltert aus roten Trauben. Für alle die etwas Spritzig und Fruchtiges mögen, sind unsere zwei Secco´s neu dabei."],
         4: ["label":"Weingut KD Warth", "street": "Württembergstraße 120 \n70327 Stuttgart Deutschland",
-            "phone": "0711 3040550", "food": "Weinausschank & Grill, Wilde Kartoffel", "coordinates": "48.785445,9.265824"],
+            "phone": "0711 3040550", "food": "Weinausschank & Grill, Wilde Kartoffel", "coordinates": "48.785445,9.265824", "color": UIColor.systemOrange,
+            "text": "Anno 1657 pflanzt Bartholomäus Warth in Untertürkheim seine ersten Weinreben. Auf den damit gelegten Grundstein für den erfolgreichen Weinbau der Familie Warth wurde in den folgenden 350 Jahren erfolgreich aufgebaut. Heute, 10 Generationen später, blicken wir auf zahlreiche Persönlichkeiten zurück, die vielfach dem König als Weingartmeister gedient haben, und in späteren Zeiten mehrfach den Bürgermeister von Untertürkheim stellten. \nMit dem Jahrgang 2008 beginnen wir unsere Weine selbst auszubauen. Und dies mit einem besonderen Versprechen: Die im Weinberg erzeugte Traubenqualität mit sanften Methoden so naturgetreu wie möglich in Weinflaschen zu füllen. \nDer Dank dafür gilt Ihnen, dass sie mit mir die Leidenschaft für hochwertige trockene Weine teilen. \nIch wünsche Ihnen viel Freude bei einem Besuch bei uns.\nIhr Klaus-Dieter Warth"]
     ]
 
     override func viewDidLoad() {
@@ -47,7 +54,8 @@ class RestaurantsViewController: UITableViewController {
             return UITableViewCell()
         }
         
-        cell.restaurantLabel.text = restaurants[indexPath.row]![label]
+        cell.restaurantLabel.text = restaurants[indexPath.row]![label] as? String
+        cell.contentView.backgroundColor = restaurants[indexPath.row]![color] as? UIColor
         return cell
     }
     
@@ -62,13 +70,15 @@ class RestaurantsViewController: UITableViewController {
             let cell = sender as! Int
             
             if restaurants[cell] != nil && detailVC != nil {
-                detailVC!.restaurantLabelText = restaurants[cell]![label]
-                detailVC!.streetLabelText = restaurants[cell]![street]
-                detailVC!.phoneText = restaurants[cell]![phone]
-                detailVC!.foodText = restaurants[cell]![food]
-                detailVC!.coordinates = restaurants[cell]![coordinates]
+                detailVC!.restaurantLabelText = restaurants[cell]![label] as? String
+                detailVC!.streetLabelText = restaurants[cell]![street] as? String
+                detailVC!.phoneText = restaurants[cell]![phone] as? String
+                detailVC!.foodText = restaurants[cell]![food] as? String
+                detailVC!.coordinates = restaurants[cell]![coordinates] as? String
+                detailVC!.textText = restaurants[cell]![text] as? String
             }
         }
     }
+    
 }
 

@@ -15,11 +15,13 @@ class RestaurantDetailViewController: UIViewController {
     var phoneText: String?
     var foodText: String?
     var coordinates: String?
+    var textText: String?
 
     @IBOutlet var restaurantLabel: UILabel!
     @IBOutlet var streetButton: UIButton!
     @IBOutlet var phone: UITextView!
     @IBOutlet var food: UILabel!
+    @IBOutlet var text: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +43,9 @@ class RestaurantDetailViewController: UIViewController {
         }
         if foodText != nil {
             self.food.text = foodText
+        }
+        if textText != nil {
+            self.text.text = textText
         }
     }
 
