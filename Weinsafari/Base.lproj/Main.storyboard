@@ -27,6 +27,7 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="paperplane.fill" catalog="system" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="6LR-Lh-FP5"/>
                     <connections>
                         <outlet property="mapView" destination="REC-yD-udE" id="GQn-WT-0B2"/>
                     </connections>
@@ -115,7 +116,9 @@
                             <outlet property="delegate" destination="W3I-BR-cDu" id="2bf-41-vBU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Weingüter" id="VeR-gi-Kbn"/>
+                    <navigationItem key="navigationItem" title="Weingüter" id="VeR-gi-Kbn">
+                        <barButtonItem key="backBarButtonItem" title="Wein-Safari" id="cto-9w-nyI"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r1U-po-tDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,61 +132,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bg-Ru-7Yx">
-                                <rect key="frame" x="62" y="152" width="304" height="60"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jNe-mj-vDZ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4p-Mm-ODC">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="restaurant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bg-Ru-7Yx">
+                                                <rect key="frame" x="10" y="60" width="394" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="AKn-C6-vE0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="food" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDw-9u-Zpf">
+                                                <rect key="frame" x="20" y="130" width="374" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="phone" translatesAutoresizingMaskIntoConstraints="NO" id="hh1-Wu-RtZ">
+                                                <rect key="frame" x="20" y="201.5" width="374" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="37" id="1Za-sV-dNh"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHh-0O-8hm">
+                                                <rect key="frame" x="25" y="259" width="369" height="66"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" link="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="K4S-vV-zo4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <state key="normal" title="street"/>
+                                                <connections>
+                                                    <action selector="facebookClicked:" destination="Bz2-5m-4Ts" eventType="touchUpInside" id="OxH-VZ-pfd"/>
+                                                    <action selector="openMaps:" destination="6BA-HT-qRW" eventType="touchUpInside" id="DF8-MN-ZqC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="hh1-Wu-RtZ" secondAttribute="trailing" constant="20" id="4hd-iJ-sz9"/>
+                                            <constraint firstItem="hh1-Wu-RtZ" firstAttribute="leading" secondItem="q4p-Mm-ODC" secondAttribute="leading" constant="20" id="6lY-m2-kRQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="hHh-0O-8hm" secondAttribute="bottom" priority="250" constant="30" id="9LD-RD-6Og"/>
+                                            <constraint firstItem="hHh-0O-8hm" firstAttribute="top" secondItem="hh1-Wu-RtZ" secondAttribute="bottom" constant="20" id="ADa-GG-185"/>
+                                            <constraint firstAttribute="trailing" secondItem="CDw-9u-Zpf" secondAttribute="trailing" constant="20" id="DaL-r6-fOX"/>
+                                            <constraint firstItem="CDw-9u-Zpf" firstAttribute="leading" secondItem="q4p-Mm-ODC" secondAttribute="leading" constant="20" id="GTA-Rg-e29"/>
+                                            <constraint firstItem="4bg-Ru-7Yx" firstAttribute="leading" secondItem="q4p-Mm-ODC" secondAttribute="leading" constant="10" id="Icu-0J-z7M"/>
+                                            <constraint firstItem="hHh-0O-8hm" firstAttribute="leading" secondItem="q4p-Mm-ODC" secondAttribute="leading" constant="25" id="T7k-W3-h1Q"/>
+                                            <constraint firstItem="hh1-Wu-RtZ" firstAttribute="top" secondItem="CDw-9u-Zpf" secondAttribute="bottom" constant="50" id="VEX-p2-50y"/>
+                                            <constraint firstItem="CDw-9u-Zpf" firstAttribute="top" secondItem="4bg-Ru-7Yx" secondAttribute="bottom" constant="10" id="hGd-Wh-HGm"/>
+                                            <constraint firstAttribute="trailing" secondItem="hHh-0O-8hm" secondAttribute="trailing" constant="20" id="hcm-eo-jb3"/>
+                                            <constraint firstItem="4bg-Ru-7Yx" firstAttribute="top" secondItem="q4p-Mm-ODC" secondAttribute="top" constant="60" id="pZh-sE-3if"/>
+                                            <constraint firstAttribute="trailing" secondItem="4bg-Ru-7Yx" secondAttribute="trailing" constant="10" id="pei-aT-2OI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="AKn-C6-vE0"/>
+                                    <constraint firstItem="q4p-Mm-ODC" firstAttribute="centerX" secondItem="jNe-mj-vDZ" secondAttribute="centerX" id="8OF-hn-lba"/>
+                                    <constraint firstItem="q4p-Mm-ODC" firstAttribute="bottom" secondItem="raX-y8-t95" secondAttribute="bottom" id="8cT-v0-NZK"/>
+                                    <constraint firstItem="q4p-Mm-ODC" firstAttribute="centerY" secondItem="jNe-mj-vDZ" secondAttribute="centerY" id="D97-rl-LKN"/>
+                                    <constraint firstItem="q4p-Mm-ODC" firstAttribute="top" secondItem="raX-y8-t95" secondAttribute="top" id="GnO-R5-mHU"/>
+                                    <constraint firstItem="q4p-Mm-ODC" firstAttribute="trailing" secondItem="raX-y8-t95" secondAttribute="trailing" id="QbT-bu-wMI"/>
+                                    <constraint firstItem="q4p-Mm-ODC" firstAttribute="leading" secondItem="raX-y8-t95" secondAttribute="leading" id="cz7-Cb-vdG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="food" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDw-9u-Zpf">
-                                <rect key="frame" x="62" y="206" width="304" height="21.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="phone" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hh1-Wu-RtZ">
-                                <rect key="frame" x="62" y="307" width="304" height="37"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="1Za-sV-dNh"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHh-0O-8hm">
-                                <rect key="frame" x="67" y="360" width="304" height="33"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" link="YES"/>
-                                </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="K4S-vV-zo4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <state key="normal" title="street"/>
-                                <connections>
-                                    <action selector="facebookClicked:" destination="Bz2-5m-4Ts" eventType="touchUpInside" id="OxH-VZ-pfd"/>
-                                    <action selector="openMaps:" destination="6BA-HT-qRW" eventType="touchUpInside" id="DF8-MN-ZqC"/>
-                                </connections>
-                            </button>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Rzn-N3-UX6"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="raX-y8-t95"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Wlb-DB-sMb" firstAttribute="trailing" secondItem="4bg-Ru-7Yx" secondAttribute="trailing" constant="48" id="0MK-kg-3Ql"/>
-                            <constraint firstItem="4bg-Ru-7Yx" firstAttribute="trailing" secondItem="CDw-9u-Zpf" secondAttribute="trailing" id="5HQ-wi-ldf"/>
-                            <constraint firstItem="4bg-Ru-7Yx" firstAttribute="leading" secondItem="CDw-9u-Zpf" secondAttribute="leading" id="JpW-WZ-K85"/>
-                            <constraint firstItem="hh1-Wu-RtZ" firstAttribute="top" secondItem="4bg-Ru-7Yx" secondAttribute="bottom" constant="95" id="KmU-fQ-9HK"/>
-                            <constraint firstItem="4bg-Ru-7Yx" firstAttribute="leading" secondItem="Wlb-DB-sMb" secondAttribute="leading" constant="62" id="SLZ-0F-Umu"/>
-                            <constraint firstItem="4bg-Ru-7Yx" firstAttribute="top" secondItem="Wlb-DB-sMb" secondAttribute="top" constant="64" id="VcK-BR-5v6"/>
-                            <constraint firstItem="hHh-0O-8hm" firstAttribute="top" secondItem="hh1-Wu-RtZ" secondAttribute="bottom" constant="16" id="YZq-9Z-YiC"/>
-                            <constraint firstItem="hHh-0O-8hm" firstAttribute="leading" secondItem="Wlb-DB-sMb" secondAttribute="leading" constant="67" id="ord-sh-4Sm"/>
-                            <constraint firstItem="Wlb-DB-sMb" firstAttribute="trailing" secondItem="hHh-0O-8hm" secondAttribute="trailing" constant="43" id="rns-LE-lsq"/>
-                            <constraint firstItem="CDw-9u-Zpf" firstAttribute="leading" secondItem="hh1-Wu-RtZ" secondAttribute="leading" id="vAq-vE-zFZ"/>
-                            <constraint firstItem="CDw-9u-Zpf" firstAttribute="top" secondItem="Wlb-DB-sMb" secondAttribute="top" constant="118" id="wL1-OP-Lfi"/>
-                            <constraint firstItem="CDw-9u-Zpf" firstAttribute="trailing" secondItem="hh1-Wu-RtZ" secondAttribute="trailing" id="xoN-iA-ABQ"/>
+                            <constraint firstItem="jNe-mj-vDZ" firstAttribute="leading" secondItem="Wlb-DB-sMb" secondAttribute="leading" id="9Zz-Dv-n0H"/>
+                            <constraint firstItem="jNe-mj-vDZ" firstAttribute="bottom" secondItem="Wlb-DB-sMb" secondAttribute="bottom" id="UjV-Vy-gqa"/>
+                            <constraint firstItem="jNe-mj-vDZ" firstAttribute="trailing" secondItem="Wlb-DB-sMb" secondAttribute="trailing" id="dYJ-Pc-vam"/>
+                            <constraint firstItem="jNe-mj-vDZ" firstAttribute="top" secondItem="Wlb-DB-sMb" secondAttribute="top" id="o8H-3l-1Q4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wlb-DB-sMb"/>
                     </view>
@@ -203,7 +234,7 @@
         <scene sceneID="56w-W8-Xl5">
             <objects>
                 <navigationController id="eso-dN-Pf2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="list.dash" catalog="system" id="yme-UC-hJc"/>
+                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="yme-UC-hJc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WWL-Hf-EuF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -224,114 +255,184 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STUTTGARTER WEINSAFARI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ne-Kf-I45">
-                                <rect key="frame" x="66.5" y="152" width="281" height="26.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19. und 20. September 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsp-Yv-kSg">
-                                <rect key="frame" x="93" y="203.5" width="228" height="21"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ql9-HL-clx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bdb-lQ-1He">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D4W-eW-uQT">
+                                                <rect key="frame" x="20" y="414.5" width="374" height="33"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Mehr Informationen">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="17"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Bz2-5m-4Ts" kind="show" id="8op-my-ILR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n9a-gm-7cL">
+                                                <rect key="frame" x="10" y="351.5" width="394" height="33"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Die Weingüter">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="17"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="W3I-BR-cDu" kind="show" id="zda-rh-wIA"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGV-N1-CKe">
+                                                <rect key="frame" x="20" y="198.5" width="374" height="118"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="118" id="Wki-S7-aQu"/>
+                                                </constraints>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Auch dieses Jahr findet wieder die ">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Wein-Safari">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="systemBold" size="17"/>
+                                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" statt, eine Wein-Entdeckungsreise rund um den Württemberg in ">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Stuttgart-Untertürkheim">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="systemBold" size="17"/>
+                                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=".">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19. und 20. September 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsp-Yv-kSg">
+                                                <rect key="frame" x="20" y="111.5" width="374" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="LhR-U2-Z3c"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:30 - 19:00 Uhr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kQ-uZ-f7l">
+                                                <rect key="frame" x="20" y="137.5" width="374" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="aai-kz-UGV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STUTTGARTER WEINSAFARI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ne-Kf-I45">
+                                                <rect key="frame" x="20" y="60" width="374" height="26.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VvQ-W0-FjR">
+                                                <rect key="frame" x="20" y="477.5" width="374" height="33"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Karte">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="17"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="8rJ-Kc-sve" kind="show" id="mU5-o0-iCh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="qsp-Yv-kSg" secondAttribute="trailing" constant="20" id="21C-mK-caq"/>
+                                            <constraint firstItem="n9a-gm-7cL" firstAttribute="centerX" secondItem="Bdb-lQ-1He" secondAttribute="centerX" constant="0.5" id="4JD-ED-TLc"/>
+                                            <constraint firstItem="1ne-Kf-I45" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leading" constant="20" id="6Yf-oP-caO"/>
+                                            <constraint firstItem="OGV-N1-CKe" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leading" constant="20" id="8AY-sM-cpi"/>
+                                            <constraint firstItem="3kQ-uZ-f7l" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leading" constant="20" id="AlO-zx-4th"/>
+                                            <constraint firstAttribute="trailing" secondItem="3kQ-uZ-f7l" secondAttribute="trailing" constant="20" id="Azc-I6-8fm"/>
+                                            <constraint firstItem="n9a-gm-7cL" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leading" constant="10" id="Dp0-wF-zbC"/>
+                                            <constraint firstItem="3kQ-uZ-f7l" firstAttribute="top" secondItem="qsp-Yv-kSg" secondAttribute="bottom" constant="5" id="Hol-me-Yjb"/>
+                                            <constraint firstItem="VvQ-W0-FjR" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leading" constant="20" id="Iab-4k-F47"/>
+                                            <constraint firstItem="qsp-Yv-kSg" firstAttribute="centerX" secondItem="Bdb-lQ-1He" secondAttribute="centerX" constant="-6" id="QQd-on-XQm"/>
+                                            <constraint firstItem="OGV-N1-CKe" firstAttribute="top" secondItem="3kQ-uZ-f7l" secondAttribute="bottom" constant="40" id="Tia-5h-arx"/>
+                                            <constraint firstItem="1ne-Kf-I45" firstAttribute="centerX" secondItem="Bdb-lQ-1He" secondAttribute="centerX" constant="-28.5" id="VjM-y1-4DC"/>
+                                            <constraint firstItem="qsp-Yv-kSg" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leading" constant="20" id="XBj-Jl-SQV"/>
+                                            <constraint firstAttribute="trailing" secondItem="OGV-N1-CKe" secondAttribute="trailing" constant="20" id="XJv-n6-jSI"/>
+                                            <constraint firstAttribute="trailing" secondItem="1ne-Kf-I45" secondAttribute="trailing" constant="20" id="ZHe-vM-h7G"/>
+                                            <constraint firstItem="D4W-eW-uQT" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leading" constant="20" id="Zem-Dd-EVZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="D4W-eW-uQT" secondAttribute="trailing" constant="20" id="bTc-Yn-XRt"/>
+                                            <constraint firstAttribute="bottom" secondItem="VvQ-W0-FjR" secondAttribute="bottom" priority="250" constant="30" id="f2q-Tw-JvZ"/>
+                                            <constraint firstItem="n9a-gm-7cL" firstAttribute="top" secondItem="OGV-N1-CKe" secondAttribute="bottom" constant="30" id="fQI-74-X4R"/>
+                                            <constraint firstItem="qsp-Yv-kSg" firstAttribute="top" secondItem="1ne-Kf-I45" secondAttribute="bottom" constant="25" id="iIv-td-2EZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="VvQ-W0-FjR" secondAttribute="trailing" constant="20" id="kzL-nE-YFs"/>
+                                            <constraint firstItem="1ne-Kf-I45" firstAttribute="top" secondItem="Bdb-lQ-1He" secondAttribute="top" constant="60" id="qrz-im-3yq"/>
+                                            <constraint firstItem="D4W-eW-uQT" firstAttribute="top" secondItem="n9a-gm-7cL" secondAttribute="bottom" constant="30" id="qsS-gy-lLB"/>
+                                            <constraint firstAttribute="trailing" secondItem="n9a-gm-7cL" secondAttribute="trailing" constant="10" id="s53-Jg-Y2y"/>
+                                            <constraint firstItem="VvQ-W0-FjR" firstAttribute="top" secondItem="D4W-eW-uQT" secondAttribute="bottom" constant="30" id="tLg-Ta-cuz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="LhR-U2-Z3c"/>
+                                    <constraint firstItem="Bdb-lQ-1He" firstAttribute="bottom" secondItem="O6H-RL-SbA" secondAttribute="bottom" id="2YP-GL-Kc4"/>
+                                    <constraint firstItem="Bdb-lQ-1He" firstAttribute="leading" secondItem="O6H-RL-SbA" secondAttribute="leading" id="4ar-dG-3Nb"/>
+                                    <constraint firstItem="Bdb-lQ-1He" firstAttribute="top" secondItem="O6H-RL-SbA" secondAttribute="top" id="9gm-0V-Hbu"/>
+                                    <constraint firstItem="Bdb-lQ-1He" firstAttribute="centerY" secondItem="ql9-HL-clx" secondAttribute="centerY" id="ADO-Eu-pfo"/>
+                                    <constraint firstItem="Bdb-lQ-1He" firstAttribute="centerX" secondItem="ql9-HL-clx" secondAttribute="centerX" id="L7d-ed-i8Y"/>
+                                    <constraint firstItem="Bdb-lQ-1He" firstAttribute="trailing" secondItem="O6H-RL-SbA" secondAttribute="trailing" id="eZj-ae-fOm"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGV-N1-CKe">
-                                <rect key="frame" x="35" y="278" width="344" height="118"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="118" id="Wki-S7-aQu"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Auch dieses Jahr findet wieder die ">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Wein-Safari">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" statt, eine Wein-Entdeckungsreise rund um den Württemberg in ">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Stuttgart-Untertürkheim">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=".">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D4W-eW-uQT">
-                                <rect key="frame" x="132" y="502" width="150" height="33"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Mehr Informationen">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="17"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                <integer key="NSUnderline" value="1"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <segue destination="Bz2-5m-4Ts" kind="show" id="8op-my-ILR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n9a-gm-7cL">
-                                <rect key="frame" x="35" y="432" width="359" height="33"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Liste der teilnehmenden Weingüter anzeigen">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="17"/>
-                                                <integer key="NSUnderline" value="1"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <segue destination="W3I-BR-cDu" kind="show" id="zda-rh-wIA"/>
-                                </connections>
-                            </button>
+                                <viewLayoutGuide key="contentLayoutGuide" id="4hl-GK-lta"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="O6H-RL-SbA"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="n9a-gm-7cL" firstAttribute="top" secondItem="OGV-N1-CKe" secondAttribute="bottom" constant="36" id="AF0-tJ-KnD"/>
-                            <constraint firstItem="qsp-Yv-kSg" firstAttribute="top" secondItem="1ne-Kf-I45" secondAttribute="bottom" constant="25" id="Feb-wo-VrN"/>
-                            <constraint firstItem="1ne-Kf-I45" firstAttribute="top" secondItem="eU8-tp-fSw" secondAttribute="top" constant="64" id="IkD-MV-ciy"/>
-                            <constraint firstItem="OGV-N1-CKe" firstAttribute="top" secondItem="qsp-Yv-kSg" secondAttribute="bottom" constant="53.5" id="J3n-DF-7ag"/>
-                            <constraint firstItem="D4W-eW-uQT" firstAttribute="centerX" secondItem="n9a-gm-7cL" secondAttribute="centerX" constant="-7.5" id="MDc-2x-ixc"/>
-                            <constraint firstItem="OGV-N1-CKe" firstAttribute="leading" secondItem="eU8-tp-fSw" secondAttribute="leading" constant="35" id="W5g-f6-FFa"/>
-                            <constraint firstItem="eU8-tp-fSw" firstAttribute="trailing" secondItem="OGV-N1-CKe" secondAttribute="trailing" constant="35" id="czG-in-bR2"/>
-                            <constraint firstItem="qsp-Yv-kSg" firstAttribute="centerX" secondItem="Tze-iM-bGQ" secondAttribute="centerX" id="eOt-DR-sRp"/>
-                            <constraint firstItem="n9a-gm-7cL" firstAttribute="centerX" secondItem="Tze-iM-bGQ" secondAttribute="centerX" constant="7.5" id="lKU-qV-XGH"/>
-                            <constraint firstItem="1ne-Kf-I45" firstAttribute="centerX" secondItem="Tze-iM-bGQ" secondAttribute="centerX" id="qxQ-PQ-RIa"/>
-                            <constraint firstItem="D4W-eW-uQT" firstAttribute="top" secondItem="n9a-gm-7cL" secondAttribute="bottom" constant="37" id="ygd-0l-gDd"/>
+                            <constraint firstItem="ql9-HL-clx" firstAttribute="trailing" secondItem="eU8-tp-fSw" secondAttribute="trailing" id="Ilb-yl-qbg"/>
+                            <constraint firstItem="ql9-HL-clx" firstAttribute="bottom" secondItem="eU8-tp-fSw" secondAttribute="bottom" id="Thi-V0-h23"/>
+                            <constraint firstItem="ql9-HL-clx" firstAttribute="top" secondItem="eU8-tp-fSw" secondAttribute="top" id="bks-dH-pOE"/>
+                            <constraint firstItem="ql9-HL-clx" firstAttribute="leading" secondItem="eU8-tp-fSw" secondAttribute="leading" id="fBH-pE-pfP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eU8-tp-fSw"/>
                     </view>
-                    <tabBarItem key="tabBarItem" image="list.dash" catalog="system" id="ZrO-RH-v1g"/>
-                    <navigationItem key="navigationItem" title="Wein-Safari" id="mpN-b1-EGz"/>
+                    <tabBarItem key="tabBarItem" image="house.fill" catalog="system" id="ZrO-RH-v1g"/>
+                    <navigationItem key="navigationItem" title="Wein-Safari" id="mpN-b1-EGz">
+                        <barButtonItem key="backBarButtonItem" title="Wein-Safari" id="XXy-LN-rWV"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mX-VE-MPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -345,122 +446,129 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M4f-M0-inh">
-                                <rect key="frame" x="0.0" y="88" width="415" height="725"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcY-uB-ZND">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cf3-Fc-TON">
-                                        <rect key="frame" x="20" y="371" width="375" height="33"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" link="YES"/>
-                                        </accessibility>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXl-PZ-5OV">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="484.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcV-Il-jla">
+                                                <rect key="frame" x="20" y="35" width="374" height="162.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">Wir freuen uns, dass die Wein Safari dieses Jahr stattfinden darf. Den Umständen entsprechend wird die Safari zur Safari-Pirsch. Rund um den Mönchsberg unterhalb der Grabkapelle können regionale Weine von den teilnehmenden Weingütern verkostet werden. Dazu gibt es auch ein leckeres Speisenangebot an den jeweiligen Ständen in den Weinbergen.</string>
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPA-vX-0ep">
+                                                <rect key="frame" x="20" y="227.5" width="374" height="61"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Mit dem Safari-Pass können Sie die Spitzenweine der Weingüter zu einem Spitzenpreis probieren. Keine Anmeldung nötig.">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cf3-Fc-TON">
+                                                <rect key="frame" x="20" y="338.5" width="374" height="33"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" link="YES"/>
+                                                </accessibility>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Facebook-Veranstaltung">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="17"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="facebookClicked:" destination="Bz2-5m-4Ts" eventType="touchUpInside" id="LvE-uu-TQr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OJ1-bA-jip">
+                                                <rect key="frame" x="20" y="401.5" width="374" height="33"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" link="YES"/>
+                                                </accessibility>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Instagram-Seite">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="17"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="instagramClicked:" destination="Bz2-5m-4Ts" eventType="touchUpInside" id="NYc-D9-whl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="33" id="6na-ck-Xf1"/>
+                                            <constraint firstItem="wcV-Il-jla" firstAttribute="leading" secondItem="FXl-PZ-5OV" secondAttribute="leading" constant="20" id="2uk-vt-AM7"/>
+                                            <constraint firstAttribute="trailing" secondItem="OJ1-bA-jip" secondAttribute="trailing" constant="20" id="69M-GE-DWH"/>
+                                            <constraint firstAttribute="bottom" secondItem="OJ1-bA-jip" secondAttribute="bottom" constant="50" id="8jh-Yf-FPd"/>
+                                            <constraint firstAttribute="trailing" secondItem="wcV-Il-jla" secondAttribute="trailing" constant="20" id="BYh-Ip-2me"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cf3-Fc-TON" secondAttribute="trailing" constant="20" id="DLV-vI-H3a"/>
+                                            <constraint firstItem="OJ1-bA-jip" firstAttribute="leading" secondItem="FXl-PZ-5OV" secondAttribute="leading" constant="20" id="K9T-zK-tVO"/>
+                                            <constraint firstItem="Cf3-Fc-TON" firstAttribute="top" secondItem="wPA-vX-0ep" secondAttribute="bottom" constant="50" id="PgS-b1-j9f"/>
+                                            <constraint firstItem="wPA-vX-0ep" firstAttribute="leading" secondItem="FXl-PZ-5OV" secondAttribute="leading" constant="20" id="Wbw-GC-dOl"/>
+                                            <constraint firstAttribute="trailing" secondItem="wPA-vX-0ep" secondAttribute="trailing" constant="20" id="WgJ-C8-BEX"/>
+                                            <constraint firstItem="wcV-Il-jla" firstAttribute="top" secondItem="FXl-PZ-5OV" secondAttribute="top" constant="35" id="acI-mp-snb"/>
+                                            <constraint firstItem="wPA-vX-0ep" firstAttribute="top" secondItem="wcV-Il-jla" secondAttribute="bottom" constant="30" id="cvl-jW-asw"/>
+                                            <constraint firstItem="Cf3-Fc-TON" firstAttribute="leading" secondItem="FXl-PZ-5OV" secondAttribute="leading" constant="20" id="n7M-1j-KGB"/>
+                                            <constraint firstItem="OJ1-bA-jip" firstAttribute="top" secondItem="Cf3-Fc-TON" secondAttribute="bottom" constant="30" id="vop-HT-y1D"/>
                                         </constraints>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Facebook-Veranstaltung">
-                                                    <attributes>
-                                                        <font key="NSFont" metaFont="system" size="17"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        <integer key="NSUnderline" value="1"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
-                                        <connections>
-                                            <action selector="facebookClicked:" destination="Bz2-5m-4Ts" eventType="touchUpInside" id="LvE-uu-TQr"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPA-vX-0ep">
-                                        <rect key="frame" x="20" y="226" width="374" height="122"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="122" id="eCa-9I-Uvz"/>
-                                        </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Mit dem Safari-Pass können Sie die Spitzenweine der Weingüter zu einem Spitzenpreis probieren. Keine Anmeldung nötig.">
-                                                <attributes>
-                                                    <font key="NSFont" metaFont="system" size="17"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcV-Il-jla">
-                                        <rect key="frame" x="20" y="27" width="374" height="191"/>
-                                        <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">Wir freuen uns, dass die Wein Safari dieses Jahr stattfinden darf. Den Umständen entsprechend wird die Safari zur Safari-Pirsch. Rund um den Mönchsberg unterhalb der Grabkapelle können regionale Weine von den teilnehmenden Weingütern verkostet werden. Dazu gibt es auch ein leckeres Speisenangebot an den jeweiligen Ständen in den Weinbergen.</string>
-                                                <attributes>
-                                                    <font key="NSFont" metaFont="system" size="17"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OJ1-bA-jip">
-                                        <rect key="frame" x="146" y="437" width="123" height="33"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" link="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="33" id="Sdu-MS-BCf"/>
-                                        </constraints>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Instagram-Seite">
-                                                    <attributes>
-                                                        <font key="NSFont" metaFont="system" size="17"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        <integer key="NSUnderline" value="1"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
-                                        <connections>
-                                            <action selector="instagramClicked:" destination="Bz2-5m-4Ts" eventType="touchUpInside" id="NYc-D9-whl"/>
-                                        </connections>
-                                    </button>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="OJ1-bA-jip" firstAttribute="top" secondItem="Cf3-Fc-TON" secondAttribute="bottom" constant="33" id="BMa-fg-eA5"/>
-                                    <constraint firstItem="Cf3-Fc-TON" firstAttribute="top" secondItem="wPA-vX-0ep" secondAttribute="bottom" constant="23" id="PWx-K9-aKG"/>
-                                    <constraint firstItem="wPA-vX-0ep" firstAttribute="top" secondItem="wcV-Il-jla" secondAttribute="bottom" constant="8" id="QJk-fH-Pd2"/>
-                                    <constraint firstAttribute="bottom" secondItem="OJ1-bA-jip" secondAttribute="bottom" constant="255" id="QJp-lM-35K"/>
-                                    <constraint firstItem="Cf3-Fc-TON" firstAttribute="leading" secondItem="M4f-M0-inh" secondAttribute="leadingMargin" constant="12" id="WIe-vD-Vu8"/>
-                                    <constraint firstItem="wcV-Il-jla" firstAttribute="centerX" secondItem="M4f-M0-inh" secondAttribute="centerX" id="cdM-Cw-I77"/>
-                                    <constraint firstItem="wcV-Il-jla" firstAttribute="leading" secondItem="wPA-vX-0ep" secondAttribute="leading" id="epW-Le-UVn"/>
-                                    <constraint firstItem="Cf3-Fc-TON" firstAttribute="centerX" secondItem="OJ1-bA-jip" secondAttribute="centerX" id="kRa-82-Dht"/>
-                                    <constraint firstItem="wcV-Il-jla" firstAttribute="trailing" secondItem="wPA-vX-0ep" secondAttribute="trailing" id="koX-Gn-iSq"/>
-                                    <constraint firstItem="bps-hU-5D2" firstAttribute="trailing" secondItem="Cf3-Fc-TON" secondAttribute="trailing" constant="19" id="mhX-V2-2ak"/>
-                                    <constraint firstAttribute="trailing" secondItem="wcV-Il-jla" secondAttribute="trailing" constant="21" id="nna-fo-zxO"/>
-                                    <constraint firstItem="OJ1-bA-jip" firstAttribute="leading" secondItem="bps-hU-5D2" secondAttribute="leading" constant="146" id="nvR-jQ-2Fc"/>
-                                    <constraint firstItem="bps-hU-5D2" firstAttribute="bottom" secondItem="OJ1-bA-jip" secondAttribute="bottom" constant="255" id="qHW-Oa-XwJ"/>
-                                    <constraint firstItem="wcV-Il-jla" firstAttribute="top" secondItem="bps-hU-5D2" secondAttribute="top" constant="27" id="wzg-04-HVC"/>
+                                    <constraint firstItem="FXl-PZ-5OV" firstAttribute="centerX" secondItem="pcY-uB-ZND" secondAttribute="centerX" id="3I1-WD-1DR"/>
+                                    <constraint firstItem="FXl-PZ-5OV" firstAttribute="centerY" secondItem="pcY-uB-ZND" secondAttribute="centerY" priority="250" id="4Ef-q7-pUa"/>
+                                    <constraint firstItem="FXl-PZ-5OV" firstAttribute="bottom" secondItem="pcY-uB-ZND" secondAttribute="bottom" priority="250" id="OQy-dp-b5u"/>
+                                    <constraint firstItem="FXl-PZ-5OV" firstAttribute="leading" secondItem="pcY-uB-ZND" secondAttribute="leading" id="YM6-OI-XWN"/>
+                                    <constraint firstItem="FXl-PZ-5OV" firstAttribute="trailing" secondItem="pcY-uB-ZND" secondAttribute="trailing" id="rmx-rX-VZx"/>
+                                    <constraint firstItem="FXl-PZ-5OV" firstAttribute="top" secondItem="pcY-uB-ZND" secondAttribute="top" id="vI1-wE-pyA"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="YDd-S5-qab"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="bps-hU-5D2"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="M4f-M0-inh" firstAttribute="bottom" secondItem="LMM-6N-UUQ" secondAttribute="bottom" id="Ibm-cy-Ebv"/>
-                            <constraint firstItem="M4f-M0-inh" firstAttribute="leading" secondItem="LMM-6N-UUQ" secondAttribute="leading" id="VCF-eA-kgc"/>
-                            <constraint firstItem="M4f-M0-inh" firstAttribute="top" secondItem="LMM-6N-UUQ" secondAttribute="top" id="eGB-9T-OjA"/>
-                            <constraint firstItem="M4f-M0-inh" firstAttribute="centerX" secondItem="jrG-7D-keT" secondAttribute="centerX" id="fmt-IQ-EHj"/>
+                            <constraint firstItem="pcY-uB-ZND" firstAttribute="bottom" secondItem="LMM-6N-UUQ" secondAttribute="bottom" id="LYb-NO-LN9"/>
+                            <constraint firstItem="pcY-uB-ZND" firstAttribute="leading" secondItem="LMM-6N-UUQ" secondAttribute="leading" id="XyP-wu-x62"/>
+                            <constraint firstItem="pcY-uB-ZND" firstAttribute="top" secondItem="LMM-6N-UUQ" secondAttribute="top" id="r12-K6-cA4"/>
+                            <constraint firstItem="pcY-uB-ZND" firstAttribute="trailing" secondItem="LMM-6N-UUQ" secondAttribute="trailing" id="rQE-P5-4XR"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="LMM-6N-UUQ"/>
+                        <viewLayoutGuide key="safeArea" id="LMM-6N-UUQ" userLabel="Safe Area"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Mehr Informationen" id="vux-XV-gOB"/>
+                    <navigationItem key="navigationItem" title="Mehr Informationen" id="vux-XV-gOB">
+                        <barButtonItem key="backBarButtonItem" title="Wein-Safari" id="vwB-0H-zrQ"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjz-wA-wKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2356.521739130435" y="-46.205357142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="mU5-o0-iCh"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="paperplane.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>

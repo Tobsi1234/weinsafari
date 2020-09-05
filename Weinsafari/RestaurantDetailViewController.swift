@@ -34,6 +34,7 @@ class RestaurantDetailViewController: UIViewController {
         }
         if streetLabelText != nil {
             self.streetButton.setTitle(streetLabelText, for: .normal)
+            self.streetButton.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping;
         }
         if phoneText != nil {
             self.phone.text = phoneText
