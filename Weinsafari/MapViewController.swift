@@ -102,19 +102,25 @@ class MapViewController: UIViewController {
             centerViewOnUserLocation()
             break
         case .denied:
-            // TODO: Show alert
+            showAlert()
             break
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
         case .restricted:
-            // TODO: Show alert
+            showAlert()
             break
         @unknown default:
             // TODO: handle
             print("Error in checkLocationAuthorization")
         }
     }
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "Standort konnte nicht ermittelt werden", message: "Damit die Kartenfunktion benutzt werden kann, müssen die Ortungsdienste in den Einstellungen unter Datenschutz -> Ortungsdienste aktiviert werden", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
 
+    }
 
 }
 
