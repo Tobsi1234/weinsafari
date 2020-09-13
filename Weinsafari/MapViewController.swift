@@ -15,8 +15,8 @@ class MapViewController: UIViewController {
     @IBOutlet var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
-    let regionInMeters = 2000.0
-    
+    var regionInMeters = 1500.0
+
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
@@ -31,10 +31,15 @@ class MapViewController: UIViewController {
     
     func centerViewOnUserLocation() {
         if let location = locationManager.location?.coordinate {
-            
             showPOIsInMap(location)
             
-            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+            if !(48.779000 ... 48.789000 ~= location.latitude && 9.255000 ... 9.269000 ~= location.longitude) {
+                regionInMeters = 10000.0
+            }
+            
+            let centerCoordinate = CLLocationCoordinate2DMake(48.783930, 9.260940)
+            
+            let region = MKCoordinateRegion.init(center: centerCoordinate, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
             mapView.setRegion(region, animated: true)
         }
     }
