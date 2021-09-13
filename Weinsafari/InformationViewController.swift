@@ -16,7 +16,7 @@ class InformationViewController: UIViewController {
     
     
     @IBAction func facebookClicked(_ sender: Any) {
-        openUrl(urlStr: "https://www.facebook.com/events/315979446490521")
+        openUrl(urlStr: "https://www.facebook.com/events/288678953027070")
     }
     
     @IBAction func instagramClicked(_ sender: Any) {
