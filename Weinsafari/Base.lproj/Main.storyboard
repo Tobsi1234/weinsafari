@@ -67,46 +67,46 @@
                         <sections>
                             <tableViewSection id="Anh-vK-1Fc">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="Kez-48-CCd">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Kez-48-CCd">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kez-48-CCd" id="OUA-kG-0Rg">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="9rh-xl-bUM">
-                                        <rect key="frame" x="0.0" y="164.5" width="414" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="9rh-xl-bUM">
+                                        <rect key="frame" x="0.0" y="144.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9rh-xl-bUM" id="STK-BC-JwX">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="6BA-HT-qRW" kind="show" identifier="SelectDetail" id="9DK-tV-hZM"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="hlm-Ns-FYt">
-                                        <rect key="frame" x="0.0" y="284.5" width="414" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="hlm-Ns-FYt">
+                                        <rect key="frame" x="0.0" y="244.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hlm-Ns-FYt" id="l1O-MW-R14">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="M16-HR-8OA">
-                                        <rect key="frame" x="0.0" y="404.5" width="414" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="M16-HR-8OA">
+                                        <rect key="frame" x="0.0" y="344.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M16-HR-8OA" id="liL-XF-LnI">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="F86-dk-srs">
-                                        <rect key="frame" x="0.0" y="524.5" width="414" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="F86-dk-srs">
+                                        <rect key="frame" x="0.0" y="444.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F86-dk-srs" id="mZH-aX-xTn">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -217,6 +217,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstItem="q4p-Mm-ODC" firstAttribute="centerY" secondItem="jNe-mj-vDZ" secondAttribute="centerY" priority="250" id="00j-72-ku4"/>
                                     <constraint firstItem="q4p-Mm-ODC" firstAttribute="leading" secondItem="jNe-mj-vDZ" secondAttribute="leading" id="5uJ-lk-lj0"/>
@@ -278,44 +279,10 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bdb-lQ-1He">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="532"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D4W-eW-uQT">
-                                                <rect key="frame" x="20" y="406" width="374" height="33"/>
-                                                <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="Mehr Informationen">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="17"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                <integer key="NSUnderline" value="1"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="Bz2-5m-4Ts" kind="show" id="8op-my-ILR"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n9a-gm-7cL">
-                                                <rect key="frame" x="10" y="343" width="394" height="33"/>
-                                                <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="Die Weingüter">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="17"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                <integer key="NSUnderline" value="1"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="W3I-BR-cDu" kind="show" id="zda-rh-wIA"/>
-                                                </connections>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGV-N1-CKe">
-                                                <rect key="frame" x="20" y="195" width="374" height="118"/>
+                                                <rect key="frame" x="20" y="179" width="374" height="118"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="118" id="Wki-S7-aQu"/>
                                                 </constraints>
@@ -376,54 +343,100 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STUTTGARTER WEINSAFARI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ne-Kf-I45">
                                                 <rect key="frame" x="20" y="60" width="374" height="23"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VvQ-W0-FjR">
-                                                <rect key="frame" x="20" y="469" width="374" height="33"/>
-                                                <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="Karte">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="17"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                <integer key="NSUnderline" value="1"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </state>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCz-kS-HeH">
+                                                <rect key="frame" x="8" y="392" width="398" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="L0N-yI-ojH"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="DIE WEINGÜTER" titleAlignment="center">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                                </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="8rJ-Kc-sve" kind="show" id="mU5-o0-iCh"/>
+                                                    <segue destination="W3I-BR-cDu" kind="show" id="Thr-jU-XcH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HI-hZ-fXG">
+                                                <rect key="frame" x="8" y="452" width="398" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="AFx-ro-79g"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="NAVIGATION" titleAlignment="center">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="8rJ-Kc-sve" kind="show" id="QhT-jc-gRZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAu-L9-RNV">
+                                                <rect key="frame" x="8" y="512" width="398" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="JqY-mF-rNp"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="BIG FIVE PASS" titleAlignment="center">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="q4k-EG-MAT" kind="show" id="SDW-Jf-zn0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urx-Ks-Q6i">
+                                                <rect key="frame" x="8" y="332" width="398" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="KN0-Ua-9ys"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="SO FUNKTIONIERT'S" titleAlignment="center">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="Bz2-5m-4Ts" kind="show" id="RRc-Zg-FBW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="aAu-L9-RNV" firstAttribute="top" secondItem="1HI-hZ-fXG" secondAttribute="bottom" constant="16" id="0Ma-5v-pcD"/>
+                                            <constraint firstItem="1HI-hZ-fXG" firstAttribute="leading" secondItem="aAu-L9-RNV" secondAttribute="leading" id="1Hk-NB-QDi"/>
                                             <constraint firstAttribute="trailing" secondItem="qsp-Yv-kSg" secondAttribute="trailing" constant="20" id="21C-mK-caq"/>
-                                            <constraint firstItem="n9a-gm-7cL" firstAttribute="centerX" secondItem="Bdb-lQ-1He" secondAttribute="centerX" constant="0.5" id="4JD-ED-TLc"/>
                                             <constraint firstItem="1ne-Kf-I45" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leading" constant="20" id="6Yf-oP-caO"/>
                                             <constraint firstItem="OGV-N1-CKe" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leading" constant="20" id="8AY-sM-cpi"/>
+                                            <constraint firstItem="1HI-hZ-fXG" firstAttribute="leading" secondItem="Urx-Ks-Q6i" secondAttribute="leading" id="Ac9-bb-2Qt"/>
                                             <constraint firstItem="3kQ-uZ-f7l" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leading" constant="20" id="AlO-zx-4th"/>
                                             <constraint firstAttribute="trailing" secondItem="3kQ-uZ-f7l" secondAttribute="trailing" constant="20" id="Azc-I6-8fm"/>
-                                            <constraint firstItem="n9a-gm-7cL" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leading" constant="10" id="Dp0-wF-zbC"/>
+                                            <constraint firstItem="1HI-hZ-fXG" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leadingMargin" id="BhQ-BK-ttQ"/>
                                             <constraint firstItem="3kQ-uZ-f7l" firstAttribute="top" secondItem="qsp-Yv-kSg" secondAttribute="bottom" constant="5" id="Hol-me-Yjb"/>
-                                            <constraint firstItem="VvQ-W0-FjR" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leading" constant="20" id="Iab-4k-F47"/>
+                                            <constraint firstItem="Urx-Ks-Q6i" firstAttribute="centerX" secondItem="Bdb-lQ-1He" secondAttribute="centerX" id="I3S-w5-lv8"/>
+                                            <constraint firstItem="1HI-hZ-fXG" firstAttribute="trailing" secondItem="Urx-Ks-Q6i" secondAttribute="trailing" id="LBs-5u-mZh"/>
+                                            <constraint firstItem="1HI-hZ-fXG" firstAttribute="trailing" secondItem="aAu-L9-RNV" secondAttribute="trailing" id="MRL-PI-0g5"/>
                                             <constraint firstItem="qsp-Yv-kSg" firstAttribute="centerX" secondItem="Bdb-lQ-1He" secondAttribute="centerX" constant="-6" id="QQd-on-XQm"/>
-                                            <constraint firstItem="OGV-N1-CKe" firstAttribute="top" secondItem="3kQ-uZ-f7l" secondAttribute="bottom" constant="40" id="Tia-5h-arx"/>
+                                            <constraint firstItem="1HI-hZ-fXG" firstAttribute="top" secondItem="tCz-kS-HeH" secondAttribute="bottom" constant="16" id="TAI-fr-zPE"/>
+                                            <constraint firstItem="OGV-N1-CKe" firstAttribute="top" secondItem="3kQ-uZ-f7l" secondAttribute="bottom" constant="24" id="Tia-5h-arx"/>
+                                            <constraint firstAttribute="bottom" secondItem="aAu-L9-RNV" secondAttribute="bottom" constant="200" id="UZx-Fc-pkR"/>
                                             <constraint firstItem="1ne-Kf-I45" firstAttribute="centerX" secondItem="Bdb-lQ-1He" secondAttribute="centerX" constant="-28.5" id="VjM-y1-4DC"/>
+                                            <constraint firstItem="tCz-kS-HeH" firstAttribute="top" secondItem="Urx-Ks-Q6i" secondAttribute="bottom" constant="16" id="WQy-8O-RY5"/>
                                             <constraint firstItem="qsp-Yv-kSg" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leading" constant="20" id="XBj-Jl-SQV"/>
+                                            <constraint firstItem="Urx-Ks-Q6i" firstAttribute="top" secondItem="OGV-N1-CKe" secondAttribute="bottom" constant="35" id="XG5-yf-Kre"/>
                                             <constraint firstAttribute="trailing" secondItem="OGV-N1-CKe" secondAttribute="trailing" constant="20" id="XJv-n6-jSI"/>
                                             <constraint firstAttribute="trailing" secondItem="1ne-Kf-I45" secondAttribute="trailing" constant="20" id="ZHe-vM-h7G"/>
-                                            <constraint firstItem="D4W-eW-uQT" firstAttribute="leading" secondItem="Bdb-lQ-1He" secondAttribute="leading" constant="20" id="Zem-Dd-EVZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="D4W-eW-uQT" secondAttribute="trailing" constant="20" id="bTc-Yn-XRt"/>
-                                            <constraint firstAttribute="bottom" secondItem="VvQ-W0-FjR" secondAttribute="bottom" priority="250" constant="30" id="f2q-Tw-JvZ"/>
-                                            <constraint firstItem="n9a-gm-7cL" firstAttribute="top" secondItem="OGV-N1-CKe" secondAttribute="bottom" constant="30" id="fQI-74-X4R"/>
+                                            <constraint firstItem="1HI-hZ-fXG" firstAttribute="trailing" secondItem="tCz-kS-HeH" secondAttribute="trailing" id="boC-qr-gIR"/>
                                             <constraint firstItem="qsp-Yv-kSg" firstAttribute="top" secondItem="1ne-Kf-I45" secondAttribute="bottom" constant="25" id="iIv-td-2EZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="VvQ-W0-FjR" secondAttribute="trailing" constant="20" id="kzL-nE-YFs"/>
+                                            <constraint firstItem="aAu-L9-RNV" firstAttribute="top" secondItem="1HI-hZ-fXG" secondAttribute="bottom" constant="16" id="mlF-HO-0FH"/>
                                             <constraint firstItem="1ne-Kf-I45" firstAttribute="top" secondItem="Bdb-lQ-1He" secondAttribute="top" constant="60" id="qrz-im-3yq"/>
-                                            <constraint firstItem="D4W-eW-uQT" firstAttribute="top" secondItem="n9a-gm-7cL" secondAttribute="bottom" constant="30" id="qsS-gy-lLB"/>
-                                            <constraint firstAttribute="trailing" secondItem="n9a-gm-7cL" secondAttribute="trailing" constant="10" id="s53-Jg-Y2y"/>
-                                            <constraint firstItem="VvQ-W0-FjR" firstAttribute="top" secondItem="D4W-eW-uQT" secondAttribute="bottom" constant="30" id="tLg-Ta-cuz"/>
+                                            <constraint firstItem="1HI-hZ-fXG" firstAttribute="leading" secondItem="tCz-kS-HeH" secondAttribute="leading" id="xyZ-nL-o8M"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -455,7 +468,7 @@
             </objects>
             <point key="canvasLocation" x="1382.608695652174" y="-449.33035714285711"/>
         </scene>
-        <!--Mehr Informationen-->
+        <!--So funktioniert's-->
         <scene sceneID="3PI-f2-Nw4">
             <objects>
                 <viewController id="Bz2-5m-4Ts" customClass="InformationViewController" customModule="Weinsafari" customModuleProvider="target" sceneMemberID="viewController">
@@ -467,13 +480,13 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXl-PZ-5OV">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="484.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="934.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcV-Il-jla">
                                                 <rect key="frame" x="20" y="35" width="374" height="162.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
-                                                        <string key="content">Wir freuen uns, dass die Wein Safari dieses Jahr stattfinden darf. Den Umständen entsprechend wird die Safari zur Safari-Pirsch. Rund um den Mönchsberg unterhalb der Grabkapelle können regionale Weine von den teilnehmenden Weingütern verkostet werden. Dazu gibt es auch ein leckeres Speisenangebot an den jeweiligen Ständen in den Weinbergen.</string>
+                                                        <string key="content">Gehen Sie auf Wein-Entdeckungsreise! Wandern Sie von Weingut zu Weingut auf dem rund 2,5 km langen Rundweg. Rund um den Mönchsberg unterhalb der Grabkapelle können regionale Weine von den teilnehmenden Weingütern verkostet werden. Dazu gibt es auch ein leckeres Speisenangebot an den jeweiligen Ständen in den Weinbergen.</string>
                                                         <attributes>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -485,7 +498,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPA-vX-0ep">
                                                 <rect key="frame" x="20" y="227.5" width="374" height="61"/>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="Mit dem Safari-Pass können Sie die Spitzenweine der Weingüter zu einem Spitzenpreis probieren. Keine Anmeldung nötig.">
+                                                    <fragment content="Mit dem BIG FIVE Pass können Sie die Spitzenweine der Weingüter zu einem Spitzenpreis probieren. Keine Anmeldung nötig.">
                                                         <attributes>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -501,7 +514,7 @@
                                                 </accessibility>
                                                 <state key="normal">
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="Facebook-Veranstaltung">
+                                                        <fragment content="Facebook-Seite">
                                                             <attributes>
                                                                 <font key="NSFont" metaFont="system" size="17"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -535,11 +548,11 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="wcV-Il-jla" firstAttribute="leading" secondItem="FXl-PZ-5OV" secondAttribute="leading" constant="20" id="2uk-vt-AM7"/>
                                             <constraint firstAttribute="trailing" secondItem="OJ1-bA-jip" secondAttribute="trailing" constant="20" id="69M-GE-DWH"/>
-                                            <constraint firstAttribute="bottom" secondItem="OJ1-bA-jip" secondAttribute="bottom" constant="50" id="8jh-Yf-FPd"/>
+                                            <constraint firstAttribute="bottom" secondItem="OJ1-bA-jip" secondAttribute="bottom" constant="500" id="8jh-Yf-FPd"/>
                                             <constraint firstAttribute="trailing" secondItem="wcV-Il-jla" secondAttribute="trailing" constant="20" id="BYh-Ip-2me"/>
                                             <constraint firstAttribute="trailing" secondItem="Cf3-Fc-TON" secondAttribute="trailing" constant="20" id="DLV-vI-H3a"/>
                                             <constraint firstItem="OJ1-bA-jip" firstAttribute="leading" secondItem="FXl-PZ-5OV" secondAttribute="leading" constant="20" id="K9T-zK-tVO"/>
@@ -572,7 +585,7 @@
                             <constraint firstItem="pcY-uB-ZND" firstAttribute="trailing" secondItem="LMM-6N-UUQ" secondAttribute="trailing" id="rQE-P5-4XR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Mehr Informationen" id="vux-XV-gOB">
+                    <navigationItem key="navigationItem" title="So funktioniert's" id="vux-XV-gOB">
                         <barButtonItem key="backBarButtonItem" title="Wein-Safari" id="vwB-0H-zrQ"/>
                     </navigationItem>
                 </viewController>
@@ -580,9 +593,88 @@
             </objects>
             <point key="canvasLocation" x="2356.521739130435" y="-46.205357142857139"/>
         </scene>
+        <!--BigFivePass-->
+        <scene sceneID="5w0-mV-dKN">
+            <objects>
+                <viewController id="q4k-EG-MAT" userLabel="BigFivePass" customClass="InformationViewController" customModule="Weinsafari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1aF-yf-E6F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rpf-07-EXI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ocj-jQ-lSS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcq-Rg-593">
+                                                <rect key="frame" x="20" y="35" width="374" height="122"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">BIG FIVE Pass bedeutet: 5 Spitzenweine der Weingüter zu einem vergünstigten Sonderpreis von 20€ anstatt 25€. Den BIG FIVE Pass können Sie an jedem Stand erwerben und erhalten durch Vorlage des Passes an jedem Stand ein Glas 0,1 l des BIG FIVE Weines des jeweiligen Weingutes.</string>
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-li-Z62">
+                                                <rect key="frame" x="20" y="187" width="374" height="81.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">Einfach probieren und sparen. Sie haben alle Weine probiert? Dann können Sie am BIG FIVE Gewinnspiel teilnehmen und tolle Weinpakete gewinnen.</string>
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="xcq-Rg-593" firstAttribute="top" secondItem="Ocj-jQ-lSS" secondAttribute="top" constant="35" id="1ic-ov-h4A"/>
+                                            <constraint firstItem="xcq-Rg-593" firstAttribute="leading" secondItem="Ocj-jQ-lSS" secondAttribute="leading" constant="20" id="5bT-Rp-Ra6"/>
+                                            <constraint firstItem="fUc-li-Z62" firstAttribute="leading" secondItem="Ocj-jQ-lSS" secondAttribute="leading" constant="20" id="So1-Kf-X62"/>
+                                            <constraint firstItem="fUc-li-Z62" firstAttribute="top" secondItem="xcq-Rg-593" secondAttribute="bottom" constant="30" id="XDQ-fa-d4t"/>
+                                            <constraint firstAttribute="trailing" secondItem="fUc-li-Z62" secondAttribute="trailing" constant="20" id="hRg-BQ-kP0"/>
+                                            <constraint firstAttribute="trailing" secondItem="xcq-Rg-593" secondAttribute="trailing" constant="20" id="wRA-mx-G1O"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ocj-jQ-lSS" firstAttribute="centerY" secondItem="Rpf-07-EXI" secondAttribute="centerY" priority="250" id="PTC-QB-DfP"/>
+                                    <constraint firstItem="Ocj-jQ-lSS" firstAttribute="trailing" secondItem="Rpf-07-EXI" secondAttribute="trailing" id="QA2-Gz-QDf"/>
+                                    <constraint firstItem="Ocj-jQ-lSS" firstAttribute="top" secondItem="Rpf-07-EXI" secondAttribute="top" id="VW1-rm-Lnx"/>
+                                    <constraint firstItem="Ocj-jQ-lSS" firstAttribute="bottom" secondItem="Rpf-07-EXI" secondAttribute="bottom" priority="250" id="jhQ-0Y-1iq"/>
+                                    <constraint firstItem="Ocj-jQ-lSS" firstAttribute="centerX" secondItem="Rpf-07-EXI" secondAttribute="centerX" id="oIA-Wk-2gk"/>
+                                    <constraint firstItem="Ocj-jQ-lSS" firstAttribute="leading" secondItem="Rpf-07-EXI" secondAttribute="leading" id="vsQ-Gt-H1D"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yuc-n0-u4L" userLabel="Safe Area"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="Rpf-07-EXI" firstAttribute="top" secondItem="yuc-n0-u4L" secondAttribute="top" id="Obw-eI-59O"/>
+                            <constraint firstItem="Rpf-07-EXI" firstAttribute="trailing" secondItem="yuc-n0-u4L" secondAttribute="trailing" id="Vry-IM-NNn"/>
+                            <constraint firstItem="Rpf-07-EXI" firstAttribute="bottom" secondItem="yuc-n0-u4L" secondAttribute="bottom" id="ZrZ-U2-6tl"/>
+                            <constraint firstItem="Rpf-07-EXI" firstAttribute="leading" secondItem="yuc-n0-u4L" secondAttribute="leading" id="eox-32-khd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="BIG FIVE Pass" id="6p0-sF-j3m">
+                        <barButtonItem key="backBarButtonItem" title="Wein-Safari" id="3P6-Q3-Cei"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="foR-2X-OO3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3384" y="102"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mU5-o0-iCh"/>
+        <segue reference="QhT-jc-gRZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
