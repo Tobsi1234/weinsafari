@@ -289,12 +289,14 @@
                                                 <attributedString key="attributedText">
                                                     <fragment content="Auch dieses Jahr findet wieder die ">
                                                         <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment content="Wein-Safari">
                                                         <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" metaFont="systemBold" size="17"/>
                                                             <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -302,12 +304,14 @@
                                                     </fragment>
                                                     <fragment content=" statt, eine Wein-Entdeckungsreise rund um den Württemberg in ">
                                                         <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment content="Stuttgart-Untertürkheim">
                                                         <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" metaFont="systemBold" size="17"/>
                                                             <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -315,6 +319,7 @@
                                                     </fragment>
                                                     <fragment content=".">
                                                         <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
@@ -328,7 +333,7 @@
                                                     <constraint firstAttribute="height" constant="21" id="LhR-U2-Z3c"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:30 - 19:00 Uhr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kQ-uZ-f7l">
@@ -337,7 +342,7 @@
                                                     <constraint firstAttribute="height" constant="21" id="aai-kz-UGV"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STUTTGARTER WEINSAFARI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ne-Kf-I45">
@@ -488,6 +493,7 @@
                                                     <fragment>
                                                         <string key="content">Gehen Sie auf Wein-Entdeckungsreise! Wandern Sie von Weingut zu Weingut auf dem rund 2,5 km langen Rundweg. Rund um den Mönchsberg unterhalb der Grabkapelle können regionale Weine von den teilnehmenden Weingütern verkostet werden. Dazu gibt es auch ein leckeres Speisenangebot an den jeweiligen Ständen in den Weinbergen.</string>
                                                         <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
@@ -500,6 +506,7 @@
                                                 <attributedString key="attributedText">
                                                     <fragment content="Mit dem BIG FIVE Pass können Sie die Spitzenweine der Weingüter zu einem Spitzenpreis probieren. Keine Anmeldung nötig.">
                                                         <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
@@ -613,6 +620,7 @@
                                                     <fragment>
                                                         <string key="content">BIG FIVE Pass bedeutet: 5 Spitzenweine der Weingüter zu einem vergünstigten Sonderpreis von 20€ anstatt 25€. Den BIG FIVE Pass können Sie an jedem Stand erwerben und erhalten durch Vorlage des Passes an jedem Stand ein Glas 0,1 l des BIG FIVE Weines des jeweiligen Weingutes.</string>
                                                         <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
@@ -626,6 +634,7 @@
                                                     <fragment>
                                                         <string key="content">Einfach probieren und sparen. Sie haben alle Weine probiert? Dann können Sie am BIG FIVE Gewinnspiel teilnehmen und tolle Weinpakete gewinnen.</string>
                                                         <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
