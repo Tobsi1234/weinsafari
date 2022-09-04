@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F626867123BF551000EB4B80 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626867023BF551000EB4B80 /* HomeViewController.swift */; };
+		F629F2E528BFFF520046ECA3 /* If.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F629F2E428BFFF520046ECA3 /* If.ttf */; };
 		F64D294224FB9C2C00D6391A /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D294124FB9C2C00D6391A /* InformationViewController.swift */; };
 		F68E2386237FFB81005459F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E2385237FFB81005459F8 /* AppDelegate.swift */; };
 		F68E2388237FFB81005459F8 /* RestaurantsViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E2387237FFB81005459F8 /* RestaurantsViewControllerViewController.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		F626867023BF551000EB4B80 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F629F2E428BFFF520046ECA3 /* If.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = If.ttf; sourceTree = "<group>"; };
 		F64D294124FB9C2C00D6391A /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InformationViewController.swift; path = /Users/Tobias/Weinsafari/Weinsafari/Weinsafari/InformationViewController.swift; sourceTree = "<absolute>"; };
 		F68E2382237FFB81005459F8 /* Weinsafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weinsafari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68E2385237FFB81005459F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F629F2E628BFFF730046ECA3 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F629F2E428BFFF520046ECA3 /* If.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		F68E2379237FFB81005459F8 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,7 @@
 				F68E238E237FFB85005459F8 /* Assets.xcassets */,
 				F68E2390237FFB85005459F8 /* LaunchScreen.storyboard */,
 				F68E2393237FFB85005459F8 /* Info.plist */,
+				F629F2E628BFFF730046ECA3 /* fonts */,
 			);
 			path = Weinsafari;
 			sourceTree = "<group>";
@@ -195,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F629F2E528BFFF520046ECA3 /* If.ttf in Resources */,
 				F68E23AA23800364005459F8 /* RestaurantTableViewCell.xib in Resources */,
 				F68E2392237FFB85005459F8 /* LaunchScreen.storyboard in Resources */,
 				F68E238F237FFB85005459F8 /* Assets.xcassets in Resources */,
@@ -386,8 +398,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 97R8489G7Q;
 				INFOPLIST_FILE = Weinsafari/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -395,10 +407,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2022.0.0;
+				MARKETING_VERSION = 2022.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Tobias.Weinsafari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Weinsafari2022Profile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -408,8 +420,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 97R8489G7Q;
 				INFOPLIST_FILE = Weinsafari/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -417,10 +429,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2022.0.0;
+				MARKETING_VERSION = 2022.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Tobias.Weinsafari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Weinsafari2022Profile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
