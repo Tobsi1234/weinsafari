@@ -407,7 +407,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2022.1.1;
+				MARKETING_VERSION = 2023.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Tobias.Weinsafari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Weinsafari2022Profile;
@@ -429,7 +429,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2022.1.1;
+				MARKETING_VERSION = 2023.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Tobias.Weinsafari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Weinsafari2022Profile;
