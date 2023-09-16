@@ -34,9 +34,9 @@ class HomeViewController: UIViewController {
                 center.add(request)
                 print("Erinnerung gesetzt.")
                 
-                /*let content2 = UNMutableNotificationContent()
+                let content2 = UNMutableNotificationContent()
                 content2.title = "Erinnerung"
-                content2.body = "Die Wein-Safari 2024 beginnt morgen!"
+                content2.body = "Die Wein-Safari 2024 startet bald!"
                 content2.categoryIdentifier = "alarm"
                 content2.sound = UNNotificationSound.default
                 //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
@@ -47,7 +47,7 @@ class HomeViewController: UIViewController {
 
                 let request2 = UNNotificationRequest(identifier: "WeinSafari2024", content: content2, trigger: trigger2)
                 center.add(request2)
-                print("Erinnerung für naechstes Jahr gesetzt.")*/
+                print("Erinnerung für naechstes Jahr gesetzt.")
             } else {
                 print("Permission not granted.")
             }
