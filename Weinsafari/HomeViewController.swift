@@ -18,14 +18,14 @@ class HomeViewController: UIViewController {
             if granted {
                 let content = UNMutableNotificationContent()
                 content.title = "Erinnerung"
-                content.body = "Die Wein-Safari 2023 beginnt morgen!"
+                content.body = "Die Wein-Safari 2024 beginnt morgen!"
                 content.categoryIdentifier = "alarm"
                 content.sound = UNNotificationSound.default
                 //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
                 dateFormatter.timeZone = TimeZone.current //(abbreviation: "GMT+0:00")
-                let date = dateFormatter.date(from: "2023-09-15 11:30:00")
+                let date = dateFormatter.date(from: "2024-09-13 11:30:00")
 
                 let triggerDate = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date!)
                 let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
@@ -36,11 +36,11 @@ class HomeViewController: UIViewController {
                 
                 let content2 = UNMutableNotificationContent()
                 content2.title = "Erinnerung"
-                content2.body = "Die Wein-Safari 2024 startet bald!"
+                content2.body = "Die Wein-Safari 2025 startet bald!"
                 content2.categoryIdentifier = "alarm"
                 content2.sound = UNNotificationSound.default
                 //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
-                let date2 = dateFormatter.date(from: "2024-09-13 11:30:00")
+                let date2 = dateFormatter.date(from: "2025-09-13 11:30:00")
 
                 let triggerDate2 = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date2!)
                 let trigger2 = UNCalendarNotificationTrigger(dateMatching: triggerDate2, repeats: false)
