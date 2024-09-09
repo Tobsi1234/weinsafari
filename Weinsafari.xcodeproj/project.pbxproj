@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		F626867023BF551000EB4B80 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F629F2E428BFFF520046ECA3 /* If.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = If.ttf; sourceTree = "<group>"; };
-		F64D294124FB9C2C00D6391A /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InformationViewController.swift; path = /Users/Tobias/Weinsafari/Weinsafari/Weinsafari/InformationViewController.swift; sourceTree = "<absolute>"; };
+		F64D294124FB9C2C00D6391A /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InformationViewController.swift; path = Weinsafari/InformationViewController.swift; sourceTree = SOURCE_ROOT; };
 		F68E2382237FFB81005459F8 /* Weinsafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weinsafari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68E2385237FFB81005459F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F68E2387237FFB81005459F8 /* RestaurantsViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewControllerViewController.swift; sourceTree = "<group>"; };
